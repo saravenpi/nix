@@ -5,9 +5,6 @@
 	};
 
 	home.packages = with pkgs; [
-		zsh
-		starship
-
 		nodejs
 		python38
     lua
@@ -40,6 +37,7 @@
 		./programs/i3/default.nix
 		./programs/nvim/default.nix
     ./programs/git/default.nix
+    ./programs/zsh/default.nix
     ./config.nix
 	];
 	home.keyboard = {

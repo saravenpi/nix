@@ -7,6 +7,18 @@
 		enable = true;
 		userEmail = "saravenpi@gmail.com";
 		userName = "saravenpi";
+
+    includes = [
+      {
+        condition = "gitdir:~/school/";
+        contents.user = {
+          name = "Yann THEVENIN";
+          address = "yann.thevenin@epita.fr";
+          email = "yann.thevenin@epita.fr";
+        };
+      }
+    ];
+
     extraConfig = {
       color.ui = true;
 
