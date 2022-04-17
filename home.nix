@@ -28,6 +28,7 @@
     tmux
 		lolcat
 		unzip
+    youtube-dl
 
 		i3-gaps
 	];

@@ -8,9 +8,9 @@
     enableAutosuggestions = true;
     enableCompletion = true;
 
-    dirHashes = {
-      code = "$HOME/Documents/code/";
-      school = "$HOME/school/";
+    localVariables = {
+      CODE = "$HOME/Documents/code/";
+      SCHOOL = "$HOME/school/";
     };
 
     shellAliases = {
@@ -32,10 +32,10 @@
       nv = "nvim";
 
       h = "cd $HOME";
-      goc = "cd $code";
-      gos = "cd $school";
-      goi = "cd $school/IP/";
-      gop = "cd $school/projetS2/";
+      goc = "cd $CODE";
+      gos = "cd $SCHOOL";
+      goi = "cd $SCHOOL/IP/";
+      gop = "cd $SCHOOL/projetS2/";
 
       gs = "git status";
       ga = "git add";
