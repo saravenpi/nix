@@ -9,8 +9,9 @@
     enableCompletion = true;
 
     localVariables = {
-      CODE = "$HOME/Documents/code/";
+      CODE = "$HOME/code/";
       SCHOOL = "$HOME/school/";
+      EDITOR = "${pkgs.neovim}/bin/nvim";
     };
 
     shellAliases = {
@@ -23,6 +24,8 @@
       tn = "ls --tree --ignore-glob='node_modules'";
       tnl = "ll --ignore-glob='node_modules' -T";
       tln = "ll --ignore-glob='node_modules' -T";
+
+      c = "clear";
 
       rm = "rm -i";
 
@@ -43,6 +46,7 @@
 
       gitu="git add . && git commit && git push";
       hms = "home-manager switch";
+      ns = "nix-shell";
     };
     
     history = {

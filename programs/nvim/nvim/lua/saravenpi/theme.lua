@@ -7,7 +7,7 @@ vim.opt.termguicolors = true
 local catppuccin = require("catppuccin")
 
 catppuccin.setup({
-  transparent_background = false,
+  transparent_background = true,
   term_colors = true,
   styles = {
     comments = "italic",
@@ -42,12 +42,7 @@ catppuccin.setup({
     nvimtree = {
       enabled = true,
       show_root = false,
-      transparent_panel = false,
-      },
-    neotree = {
-      enabled = false,
-      show_root = false,
-      transparent_panel = false,
+      transparent_panel = true,
       },
     which_key = true,
     indent_blankline = {
@@ -56,25 +51,15 @@ catppuccin.setup({
       },
     dashboard = true,
     neogit = false,
-    vim_sneak = false,
-    fern = false,
     barbar = true,
     bufferline = true,
     markdown = true,
-    lightspeed = false,
-    ts_rainbow = false,
-    hop = false,
     notify = true,
     telekasten = true,
   }
 })
 
--- vim.cmd('colorscheme catppuccin')
--- vim.cmd('colorscheme paper')
--- vim.cmd('colorscheme gruvbox')
--- vim.o.background = "dark"
--- vim.cmd('colorscheme tokyonight')
-vim.cmd('colorscheme dracula')
+vim.cmd('colorscheme catppuccin')
 
 require('lualine').setup {
   options = {

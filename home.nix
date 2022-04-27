@@ -1,46 +1,67 @@
 { pkgs, ... }: {
 
-	programs.neovim = {
-	  enable = true;
-	};
-
 	home.packages = with pkgs; [
-		nodejs
+    # Languages
+    nodejs-17_x
 		python38
     lua
 
-    omnisharp-roslyn
 
-		discord
+    # Communication
+    keybase-gui
+    keybase
+    kbfs
+
+    ricochet
 		element-desktop
+    tdesktop
+		discord
+    whatsapp-for-linux
 
-		google-chrome
+    # Desktop Applications
+    tor-browser-bundle-bin
 		bitwarden
 		gnome-multi-writer
 		spotify
+    wpsoffice
+    rpi-imager
 
 		ulauncher
 		wmctrl
 
+    # Configuration Softwares
+    blueman
+    libinput-gestures
+    pavucontrol
+
+    # Dev Apps
+    cool-retro-term
+    alacritty
+    insomnia
+
+    # Terminal Programs
 		neofetch
 		exa
 		gcc
     tmux
 		lolcat
+    cmatrix
+    nyancat
 		unzip
+    nmap
+    mlocate
     youtube-dl
-
-		i3-gaps
+    btop
 	];
 
 	imports = [
 		./programs/starship/default.nix
-		./programs/i3/default.nix
 		./programs/nvim/default.nix
     ./programs/git/default.nix
     ./programs/zsh/default.nix
-    ./config.nix
+    ./config-nixpkgs.nix
 	];
+
 	home.keyboard = {
 		layout = "us";
 		variant = "intl";

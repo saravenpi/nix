@@ -5,7 +5,6 @@
   ];
   programs.starship = {
     enable = true;
-# Configuration written to ~/.config/starship.toml
     settings = {
       add_newline = false;
 
@@ -20,13 +19,21 @@
 
       directory = {
         format = "[$path]($style)[$read_only]($read_only_style) ";
-# style = "bold  #50fa7b";
         read_only = "🔒";
         read_only_style = "red";
         home_symbol = "🏠";
       };
 
-# package.disabled = true;
+      git_branch = {
+        format = "on [$symbol$branch ]($style)";
+        symbol = " ";
+        style = "bold  #de3163";
+      };
+
+      git_commit = {
+        style = "bold green";
+      };
+
     };
   };
 }

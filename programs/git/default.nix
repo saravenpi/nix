@@ -1,7 +1,7 @@
 { config, pkgs, libs, ... }:
 {
   home.packages = with pkgs; [
-    starship
+    git
   ];
   programs.git = { 
 		enable = true;
@@ -34,6 +34,8 @@
       pull.ff = "only";
 
       init.defaultBranch = "master";
+
+      credential.helper = "store";
     };
-	};
+  };
 }
